@@ -56,7 +56,7 @@ SMALL_CONFIG = {
     "max_ratio_of_edges_vertices": 4,
     "max_pattern_counts": 1024,
 
-    "save_data_dir": r"/data/xliucr/SubIsoCnt/small",
+    "save_data_dir": r"../data/small",
     "num_workers": 16
 }
 
@@ -80,7 +80,7 @@ LARGE_CONFIG = {
     "max_ratio_of_edges_vertices": 4,
     "max_pattern_counts": 4096,
 
-    "save_data_dir": r"/data/xliucr/SubIsoCnt/large",
+    "save_data_dir": r"../data/large",
     "num_workers": 16
 }
 
