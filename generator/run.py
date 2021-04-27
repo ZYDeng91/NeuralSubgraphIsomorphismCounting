@@ -39,25 +39,25 @@ DEBUG_CONFIG = {
 SMALL_CONFIG = {
     "max_subgraph": 512,
 
-    "alphas": [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+    "alphas": [0.2, 0.4, 0.6, 0.8],
 
     "number_of_patterns": 3,
-    "number_of_pattern_vertices": [3, 4, 8],
-    "number_of_pattern_edges": [2, 4, 8],
-    "number_of_pattern_vertex_labels": [2, 4, 8],
-    "number_of_pattern_edge_labels": [2, 4, 8],
+    "number_of_pattern_vertices": [3, 4],
+    "number_of_pattern_edges": [2, 4],
+    "number_of_pattern_vertex_labels": [2, 4],
+    "number_of_pattern_edge_labels": [2, 4],
 
     "number_of_graphs": 10, # train:dev:test = 8:1:1
-    "number_of_graph_vertices": [8, 16, 32, 64],
-    "number_of_graph_edges": [8, 16, 32, 64, 128, 256],
-    "number_of_graph_vertex_labels": [4, 8, 16],
-    "number_of_graph_edge_labels": [4, 8, 16],
+    "number_of_graph_vertices": [16, 32],
+    "number_of_graph_edges": [16, 32, 64, 128],
+    "number_of_graph_vertex_labels": [8, 16],
+    "number_of_graph_edge_labels": [8, 16],
 
     "max_ratio_of_edges_vertices": 4,
     "max_pattern_counts": 1024,
 
     "save_data_dir": r"../data/small",
-    "num_workers": 16
+    "num_workers": 8
 }
 
 LARGE_CONFIG = {
@@ -72,8 +72,8 @@ LARGE_CONFIG = {
     "number_of_pattern_edge_labels": [2, 4, 8, 16],
 
     "number_of_graphs": 10, # train:dev:test = 8:1:1
-    "number_of_graph_vertices": [64, 128, 256, 512],
-    "number_of_graph_edges": [64, 128, 256, 512, 1024, 2048],
+    "number_of_graph_vertices": [64, 128, 256],
+    "number_of_graph_edges": [128, 256, 512, 1024],
     "number_of_graph_vertex_labels": [16, 32, 64],
     "number_of_graph_edge_labels": [16, 32, 64],
 
@@ -81,10 +81,10 @@ LARGE_CONFIG = {
     "max_pattern_counts": 4096,
 
     "save_data_dir": r"../data/large",
-    "num_workers": 16
+    "num_workers": 8
 }
 
-CONFIG = DEBUG_CONFIG
+CONFIG = SMALL_CONFIG
 
 def generate_graphs(graph_generator, number_of_graph_vertices, number_of_graph_edges, number_of_graph_vertex_labels, number_of_graph_edge_labels,
     alpha, max_pattern_counts, max_subgraph, number_of_graphs, save_graph_dir, save_metadata_dir):
