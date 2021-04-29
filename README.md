@@ -5,7 +5,7 @@ This repository is an unofficial implementation of the paper [Neural Subgraph Is
 The original version of the repository can be found at [ HKUST-KnowComp /
 NeuralSubgraphCounting ](https://github.com/HKUST-KnowComp/NeuralSubgraphCounting).
 
-##Instructions
+## Instructions
 
 Package Dependencies
 
